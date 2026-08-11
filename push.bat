@@ -1,4 +1,5 @@
 @echo off
 git add .
-git commit -m "Update layout, navbar colors, and add video control HUD"
+git commit -m "Sync layout updates and fixes"
+git pull origin main --rebase
 git push origin main
