@@ -5,8 +5,6 @@ import { ShoppingBag, Search, Menu } from 'lucide-react';
 export const Navbar: React.FC = () => {
   const { scrollY } = useScroll();
   const [hidden, setHidden] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
-
   useMotionValueEvent(scrollY, "change", (latest) => {
     const previous = scrollY.getPrevious() || 0;
     if (latest > previous && latest > 150) {
@@ -14,7 +12,6 @@ export const Navbar: React.FC = () => {
     } else {
       setHidden(false);
     }
-    setIsScrolled(latest > 50);
   });
 
   return (

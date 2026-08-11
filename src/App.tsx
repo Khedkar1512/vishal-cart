@@ -1,4 +1,3 @@
-import React from 'react';
 import { Navbar } from './components/Navbar';
 import { ProgressIndicator } from './components/ProgressIndicator';
 import { Home } from './pages/Home';

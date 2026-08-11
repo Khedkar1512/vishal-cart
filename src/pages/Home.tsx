@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { motion, useTime, useTransform, MotionValue } from 'framer-motion';
 import { products } from '../data/products';
 import type { Product } from '../data/products';
@@ -107,17 +107,8 @@ export const Home: React.FC = () => {
   const ctaY = useTransform(progress, [0.80, 0.9], ["20%", "0%"]);
   const ctaOpacity = useTransform(progress, [0.80, 0.9], [0, 1]);
 
-  const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
-  const handleMouseMove = (e: React.MouseEvent) => {
-    const { clientX, clientY } = e;
-    const x = (clientX / window.innerWidth - 0.5) * 40;
-    const y = (clientY / window.innerHeight - 0.5) * 40;
-    setMousePos({ x, y });
-  };
-
   return (
     <main 
-      onMouseMove={handleMouseMove}
       style={{ height: '100vh', width: '100vw', position: 'relative', overflow: 'hidden', background: '#f5f0eb' }}
     >
       
