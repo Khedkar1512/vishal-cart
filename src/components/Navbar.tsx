@@ -24,28 +24,28 @@ export const Navbar: React.FC = () => {
         top: 0,
         left: 0,
         width: '100vw',
-        padding: '1.5rem 2rem',
+        padding: '1.25rem 2rem',
         display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'center',
         zIndex: 100,
-        background: 'rgba(74, 14, 23, 0.95)', // Deep Wine/Burgundy
-        backdropFilter: 'blur(10px)',
-        borderBottom: '1px solid rgba(255,255,255,0.1)'
+        background: 'rgba(249, 246, 242, 0.85)', // Translucent Champagne
+        backdropFilter: 'blur(15px)',
+        borderBottom: '1px solid rgba(74, 14, 23, 0.08)'
       }}
     >
       <div style={{ display: 'flex', alignItems: 'center', gap: '2rem' }}>
-        <Menu size={24} style={{ cursor: 'pointer', color: '#fff' }} />
-        <span style={{ fontSize: '1.5rem', fontWeight: 900, letterSpacing: '0.05em', color: '#fff', fontFamily: "'Playfair Display', serif" }}>VISHAL CART</span>
+        <Menu size={24} style={{ cursor: 'pointer', color: '#4a0e17' }} />
+        <span style={{ fontSize: '1.5rem', fontWeight: 900, letterSpacing: '0.05em', color: '#4a0e17', fontFamily: "'Playfair Display', serif" }}>VISHAL CART</span>
       </div>
       
-      <div style={{ display: 'flex', gap: '2.5rem', textTransform: 'uppercase', fontSize: '0.85rem', letterSpacing: '0.15em', fontWeight: 600, color: '#fff' }} className="hidden md:flex">
-        <a href="#collection" style={{ transition: 'color 0.3s' }} onMouseOver={e => e.currentTarget.style.color = '#ffd54f'} onMouseOut={e => e.currentTarget.style.color = '#fff'}>Offers</a>
-        <a href="#featured" style={{ transition: 'color 0.3s' }} onMouseOver={e => e.currentTarget.style.color = '#ffd54f'} onMouseOut={e => e.currentTarget.style.color = '#fff'}>Trending</a>
-        <a href="#about" style={{ transition: 'color 0.3s' }} onMouseOver={e => e.currentTarget.style.color = '#ffd54f'} onMouseOut={e => e.currentTarget.style.color = '#fff'}>Categories</a>
+      <div style={{ display: 'flex', gap: '2.5rem', textTransform: 'uppercase', fontSize: '0.85rem', letterSpacing: '0.15em', fontWeight: 700, color: '#4a0e17' }} className="hidden md:flex">
+        <a href="#collection" style={{ transition: 'color 0.3s' }} onMouseOver={e => e.currentTarget.style.color = '#b89047'} onMouseOut={e => e.currentTarget.style.color = '#4a0e17'}>Offers</a>
+        <a href="#featured" style={{ transition: 'color 0.3s' }} onMouseOver={e => e.currentTarget.style.color = '#b89047'} onMouseOut={e => e.currentTarget.style.color = '#4a0e17'}>Trending</a>
+        <a href="#about" style={{ transition: 'color 0.3s' }} onMouseOver={e => e.currentTarget.style.color = '#b89047'} onMouseOut={e => e.currentTarget.style.color = '#4a0e17'}>Categories</a>
       </div>
 
-      <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem', color: '#fff' }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem', color: '#4a0e17' }}>
         <Search size={22} style={{ cursor: 'pointer' }} />
         <div style={{ position: 'relative' }}>
           <ShoppingBag size={22} style={{ cursor: 'pointer' }} />
