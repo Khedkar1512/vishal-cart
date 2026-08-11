@@ -3,7 +3,7 @@
 A premium, modern 60-second automatic cinematic e-commerce launch webpage. It functions like a high-energy advertising video commercial that runs automatically upon loading, featuring an elegant burgundy and champagne editorial theme.
 
 ## Live Deployment Link
-👉 [https://vishal-cart.onrender.com](https://vishal-cart.onrender.com) *(Placeholder)*
+👉https://vishal-cart.onrender.com
 
 ## Technologies Used
 - **React 18**: Frontend component architecture.
